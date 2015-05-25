@@ -1,0 +1,33 @@
+<h1>Listing score_card_types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Desc</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @score_card_types.each do |score_card_type| %>
+      <tr>
+        <td><%= score_card_type.desc %></td>
+        <td><%= score_card_type.created_by %></td>
+        <td><%= score_card_type.created_date %></td>
+        <td><%= score_card_type.updated_by %></td>
+        <td><%= score_card_type.updated_date %></td>
+        <td><%= link_to 'Show', score_card_type %></td>
+        <td><%= link_to 'Edit', edit_score_card_type_path(score_card_type) %></td>
+        <td><%= link_to 'Destroy', score_card_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Score card type', new_score_card_type_path %>

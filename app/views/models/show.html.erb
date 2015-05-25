@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userdetail:</strong>
+  <%= @model.UserDetail %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @model.user_id %>
+</p>
+
+<p>
+  <strong>Handicap:</strong>
+  <%= @model.handicap %>
+</p>
+
+<p>
+  <strong>Precision:</strong>
+  <%= @model.precision %>
+</p>
+
+<p>
+  <strong>Handicap status:</strong>
+  <%= @model.handicap_status %>
+</p>
+
+<p>
+  <strong>Tee:</strong>
+  <%= @model.tee_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @model.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @model.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @model.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @model.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_model_path(@model) %> |
+<%= link_to 'Back', models_path %>

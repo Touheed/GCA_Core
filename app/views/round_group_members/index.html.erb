@@ -1,0 +1,35 @@
+<h1>Listing round_group_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Round group</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @round_group_members.each do |round_group_member| %>
+      <tr>
+        <td><%= round_group_member.user_id %></td>
+        <td><%= round_group_member.round_group_id %></td>
+        <td><%= round_group_member.created_by %></td>
+        <td><%= round_group_member.created_date %></td>
+        <td><%= round_group_member.updated_by %></td>
+        <td><%= round_group_member.updated_date %></td>
+        <td><%= link_to 'Show', round_group_member %></td>
+        <td><%= link_to 'Edit', edit_round_group_member_path(round_group_member) %></td>
+        <td><%= link_to 'Destroy', round_group_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Round group member', new_round_group_member_path %>

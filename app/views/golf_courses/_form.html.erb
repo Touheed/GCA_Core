@@ -1,0 +1,41 @@
+<%= form_for(@golf_course) do |f| %>
+  <% if @golf_course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@golf_course.errors.count, "error") %> prohibited this golf_course from being saved:</h2>
+
+      <ul>
+      <% @golf_course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :golf_club_id %><br>
+    <%= f.text_field :golf_club_id %>
+  </div>
+  <div class="field">
+    <%= f.label :course_name %><br>
+    <%= f.text_field :course_name %>
+  </div>
+  <div class="field">
+    <%= f.label :course_rating %><br>
+    <%= f.text_field :course_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+<h1>Listing players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gca user</th>
+      <th>Handicap</th>
+      <th>Tee</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th>Score</th>
+      <th>Putts</th>
+      <th>Fairway hits</th>
+      <th>Handicap status</th>
+      <th>Status</th>
+      <th>Nick name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.gca_user_id %></td>
+        <td><%= player.handicap %></td>
+        <td><%= player.tee_id %></td>
+        <td><%= player.created_by %></td>
+        <td><%= player.created_date %></td>
+        <td><%= player.updated_by %></td>
+        <td><%= player.updated_date %></td>
+        <td><%= player.score %></td>
+        <td><%= player.putts %></td>
+        <td><%= player.fairway_hits %></td>
+        <td><%= player.handicap_status %></td>
+        <td><%= player.status %></td>
+        <td><%= player.nick_name %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>

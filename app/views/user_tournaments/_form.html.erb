@@ -1,0 +1,45 @@
+<%= form_for(@user_tournament) do |f| %>
+  <% if @user_tournament.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_tournament.errors.count, "error") %> prohibited this user_tournament from being saved:</h2>
+
+      <ul>
+      <% @user_tournament.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gca_user_id %><br>
+    <%= f.text_field :gca_user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :golf_club_tournament_id %><br>
+    <%= f.text_field :golf_club_tournament_id %>
+  </div>
+  <div class="field">
+    <%= f.label :authentication_token %><br>
+    <%= f.text_field :authentication_token %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.datetime_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_detail.user_id %>
+</p>
+
+<p>
+  <strong>Handicap:</strong>
+  <%= @user_detail.handicap %>
+</p>
+
+<p>
+  <strong>Precision:</strong>
+  <%= @user_detail.precision %>
+</p>
+
+<p>
+  <strong>Handicap status:</strong>
+  <%= @user_detail.handicap_status %>
+</p>
+
+<p>
+  <strong>Tee:</strong>
+  <%= @user_detail.tee_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @user_detail.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @user_detail.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @user_detail.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @user_detail.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_user_detail_path(@user_detail) %> |
+<%= link_to 'Back', user_details_path %>

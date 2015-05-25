@@ -1,0 +1,51 @@
+<h1>Listing golf_course_features</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hole number</th>
+      <th>Feature type</th>
+      <th>Show marker</th>
+      <th>Front latitude</th>
+      <th>Front longitude</th>
+      <th>Back latitude</th>
+      <th>Back longitude</th>
+      <th>Description</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th>Golf course</th>
+      <th>Course hole</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @golf_course_features.each do |golf_course_feature| %>
+      <tr>
+        <td><%= golf_course_feature.hole_number %></td>
+        <td><%= golf_course_feature.feature_type %></td>
+        <td><%= golf_course_feature.show_marker %></td>
+        <td><%= golf_course_feature.front_latitude %></td>
+        <td><%= golf_course_feature.front_longitude %></td>
+        <td><%= golf_course_feature.back_latitude %></td>
+        <td><%= golf_course_feature.back_longitude %></td>
+        <td><%= golf_course_feature.description %></td>
+        <td><%= golf_course_feature.created_by %></td>
+        <td><%= golf_course_feature.created_date %></td>
+        <td><%= golf_course_feature.updated_by %></td>
+        <td><%= golf_course_feature.updated_date %></td>
+        <td><%= golf_course_feature.golf_course_id %></td>
+        <td><%= golf_course_feature.course_hole_id %></td>
+        <td><%= link_to 'Show', golf_course_feature %></td>
+        <td><%= link_to 'Edit', edit_golf_course_feature_path(golf_course_feature) %></td>
+        <td><%= link_to 'Destroy', golf_course_feature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Golf course feature', new_golf_course_feature_path %>

@@ -1,0 +1,37 @@
+<h1>Listing user_tournaments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gca user</th>
+      <th>Golf club tournament</th>
+      <th>Authentication token</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_tournaments.each do |user_tournament| %>
+      <tr>
+        <td><%= user_tournament.gca_user_id %></td>
+        <td><%= user_tournament.golf_club_tournament_id %></td>
+        <td><%= user_tournament.authentication_token %></td>
+        <td><%= user_tournament.created_by %></td>
+        <td><%= user_tournament.created_date %></td>
+        <td><%= user_tournament.updated_by %></td>
+        <td><%= user_tournament.updated_date %></td>
+        <td><%= link_to 'Show', user_tournament %></td>
+        <td><%= link_to 'Edit', edit_user_tournament_path(user_tournament) %></td>
+        <td><%= link_to 'Destroy', user_tournament, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User tournament', new_user_tournament_path %>

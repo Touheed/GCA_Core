@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @score_card_type.desc %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @score_card_type.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @score_card_type.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @score_card_type.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @score_card_type.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_score_card_type_path(@score_card_type) %> |
+<%= link_to 'Back', score_card_types_path %>

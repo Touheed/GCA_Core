@@ -1,0 +1,43 @@
+<h1>Listing models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userdetail</th>
+      <th>User</th>
+      <th>Handicap</th>
+      <th>Precision</th>
+      <th>Handicap status</th>
+      <th>Tee</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @models.each do |model| %>
+      <tr>
+        <td><%= model.UserDetail %></td>
+        <td><%= model.user_id %></td>
+        <td><%= model.handicap %></td>
+        <td><%= model.precision %></td>
+        <td><%= model.handicap_status %></td>
+        <td><%= model.tee_id %></td>
+        <td><%= model.created_by %></td>
+        <td><%= model.created_date %></td>
+        <td><%= model.updated_by %></td>
+        <td><%= model.updated_date %></td>
+        <td><%= link_to 'Show', model %></td>
+        <td><%= link_to 'Edit', edit_model_path(model) %></td>
+        <td><%= link_to 'Destroy', model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model', new_model_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Score card type:</strong>
+  <%= @round.score_card_type_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @round.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @round.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @round.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @round.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>

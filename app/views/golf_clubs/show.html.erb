@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Club name:</strong>
+  <%= @golf_club.club_name %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @golf_club.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @golf_club.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @golf_club.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @golf_club.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_golf_club_path(@golf_club) %> |
+<%= link_to 'Back', golf_clubs_path %>

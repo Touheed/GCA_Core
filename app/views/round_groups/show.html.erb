@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @round_group.round_id %>
+</p>
+
+<p>
+  <strong>Group name:</strong>
+  <%= @round_group.group_name %>
+</p>
+
+<p>
+  <strong>Group type:</strong>
+  <%= @round_group.group_type %>
+</p>
+
+<p>
+  <strong>Group owner:</strong>
+  <%= @round_group.group_owner %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @round_group.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @round_group.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @round_group.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @round_group.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_round_group_path(@round_group) %> |
+<%= link_to 'Back', round_groups_path %>

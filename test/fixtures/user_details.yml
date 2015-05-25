@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  handicap: 
+  precision: MyString
+  handicap_status: MyString
+  tee_id: 
+  created_by: 
+  created_date: 2015-05-01 12:53:09
+  updated_by: 
+  updated_date: 2015-05-01 12:53:09
+
+two:
+  user_id: 
+  handicap: 
+  precision: MyString
+  handicap_status: MyString
+  tee_id: 
+  created_by: 
+  created_date: 2015-05-01 12:53:09
+  updated_by: 
+  updated_date: 2015-05-01 12:53:09

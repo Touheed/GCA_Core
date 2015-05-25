@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_tournament_id: 
+  course_hole_id: 
+  score: 
+  putts: 1
+  fairway_hits: 1
+  handicap_index: 
+  created_by: 
+  created_date: 2015-05-06 17:06:45
+  updated_by: 
+  updated_date: 2015-05-06 17:06:45
+
+two:
+  user_tournament_id: 
+  course_hole_id: 
+  score: 
+  putts: 1
+  fairway_hits: 1
+  handicap_index: 
+  created_by: 
+  created_date: 2015-05-06 17:06:45
+  updated_by: 
+  updated_date: 2015-05-06 17:06:45

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @score_card.round_id %>
+</p>
+
+<p>
+  <strong>Course hole:</strong>
+  <%= @score_card.course_hole_id %>
+</p>
+
+<p>
+  <strong>Round group member:</strong>
+  <%= @score_card.round_group_member_id %>
+</p>
+
+<p>
+  <strong>Handicap index:</strong>
+  <%= @score_card.handicap_index %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @score_card.score %>
+</p>
+
+<p>
+  <strong>Putts:</strong>
+  <%= @score_card.putts %>
+</p>
+
+<p>
+  <strong>Fairway hits:</strong>
+  <%= @score_card.fairway_hits %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @score_card.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @score_card.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @score_card.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @score_card.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_score_card_path(@score_card) %> |
+<%= link_to 'Back', score_cards_path %>

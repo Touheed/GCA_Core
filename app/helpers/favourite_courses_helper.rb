@@ -1,0 +1,2 @@
+module FavouriteCoursesHelper
+end

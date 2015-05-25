@@ -1,0 +1,39 @@
+<h1>Listing course_hole_tees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tee</th>
+      <th>Course hole</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_hole_tees.each do |course_hole_tee| %>
+      <tr>
+        <td><%= course_hole_tee.tee_id %></td>
+        <td><%= course_hole_tee.course_hole_id %></td>
+        <td><%= course_hole_tee.latitude %></td>
+        <td><%= course_hole_tee.longitude %></td>
+        <td><%= course_hole_tee.created_by %></td>
+        <td><%= course_hole_tee.created_date %></td>
+        <td><%= course_hole_tee.updated_by %></td>
+        <td><%= course_hole_tee.updated_date %></td>
+        <td><%= link_to 'Show', course_hole_tee %></td>
+        <td><%= link_to 'Edit', edit_course_hole_tee_path(course_hole_tee) %></td>
+        <td><%= link_to 'Destroy', course_hole_tee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course hole tee', new_course_hole_tee_path %>

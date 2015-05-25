@@ -1,0 +1,57 @@
+<%= form_for(@leaderboard) do |f| %>
+  <% if @leaderboard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@leaderboard.errors.count, "error") %> prohibited this leaderboard from being saved:</h2>
+
+      <ul>
+      <% @leaderboard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_tournament_id %><br>
+    <%= f.text_field :user_tournament_id %>
+  </div>
+  <div class="field">
+    <%= f.label :course_hole_id %><br>
+    <%= f.text_field :course_hole_id %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br>
+    <%= f.text_field :score %>
+  </div>
+  <div class="field">
+    <%= f.label :putts %><br>
+    <%= f.number_field :putts %>
+  </div>
+  <div class="field">
+    <%= f.label :fairway_hits %><br>
+    <%= f.number_field :fairway_hits %>
+  </div>
+  <div class="field">
+    <%= f.label :handicap_index %><br>
+    <%= f.text_field :handicap_index %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.datetime_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

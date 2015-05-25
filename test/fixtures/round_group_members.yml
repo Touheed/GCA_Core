@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  round_group_id: 
+  created_by: 
+  created_date: 2015-05-01 20:56:47
+  updated_by: 
+  updated_date: 2015-05-01 20:56:47
+
+two:
+  user_id: 
+  round_group_id: 
+  created_by: 
+  created_date: 2015-05-01 20:56:47
+  updated_by: 
+  updated_date: 2015-05-01 20:56:47

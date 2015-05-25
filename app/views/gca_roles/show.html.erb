@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Role name:</strong>
+  <%= @gca_role.role_name %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @gca_role.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @gca_role.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @gca_role.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @gca_role.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_gca_role_path(@gca_role) %> |
+<%= link_to 'Back', gca_roles_path %>

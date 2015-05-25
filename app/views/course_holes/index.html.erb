@@ -1,0 +1,37 @@
+<h1>Listing course_holes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Golf course</th>
+      <th>Par</th>
+      <th>Stroke index</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_holes.each do |course_hole| %>
+      <tr>
+        <td><%= course_hole.golf_course_id %></td>
+        <td><%= course_hole.par %></td>
+        <td><%= course_hole.stroke_index %></td>
+        <td><%= course_hole.created_by %></td>
+        <td><%= course_hole.created_date %></td>
+        <td><%= course_hole.updated_by %></td>
+        <td><%= course_hole.updated_date %></td>
+        <td><%= link_to 'Show', course_hole %></td>
+        <td><%= link_to 'Edit', edit_course_hole_path(course_hole) %></td>
+        <td><%= link_to 'Destroy', course_hole, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course hole', new_course_hole_path %>

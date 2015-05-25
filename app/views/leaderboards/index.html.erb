@@ -1,0 +1,43 @@
+<h1>Listing leaderboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User tournament</th>
+      <th>Course hole</th>
+      <th>Score</th>
+      <th>Putts</th>
+      <th>Fairway hits</th>
+      <th>Handicap index</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leaderboards.each do |leaderboard| %>
+      <tr>
+        <td><%= leaderboard.user_tournament_id %></td>
+        <td><%= leaderboard.course_hole_id %></td>
+        <td><%= leaderboard.score %></td>
+        <td><%= leaderboard.putts %></td>
+        <td><%= leaderboard.fairway_hits %></td>
+        <td><%= leaderboard.handicap_index %></td>
+        <td><%= leaderboard.created_by %></td>
+        <td><%= leaderboard.created_date %></td>
+        <td><%= leaderboard.updated_by %></td>
+        <td><%= leaderboard.updated_date %></td>
+        <td><%= link_to 'Show', leaderboard %></td>
+        <td><%= link_to 'Edit', edit_leaderboard_path(leaderboard) %></td>
+        <td><%= link_to 'Destroy', leaderboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Leaderboard', new_leaderboard_path %>

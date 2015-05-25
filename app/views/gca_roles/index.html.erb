@@ -1,0 +1,33 @@
+<h1>Listing gca_roles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role name</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gca_roles.each do |gca_role| %>
+      <tr>
+        <td><%= gca_role.role_name %></td>
+        <td><%= gca_role.created_by %></td>
+        <td><%= gca_role.created_date %></td>
+        <td><%= gca_role.updated_by %></td>
+        <td><%= gca_role.updated_date %></td>
+        <td><%= link_to 'Show', gca_role %></td>
+        <td><%= link_to 'Edit', edit_gca_role_path(gca_role) %></td>
+        <td><%= link_to 'Destroy', gca_role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gca role', new_gca_role_path %>

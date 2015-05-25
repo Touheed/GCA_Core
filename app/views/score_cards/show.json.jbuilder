@@ -1,0 +1,1 @@
+json.extract! @score_card, :id, :round_id, :course_hole_id, :round_group_member_id, :handicap_index, :score, :putts, :fairway_hits, :created_by, :created_date, :updated_by, :updated_date, :created_at, :updated_at

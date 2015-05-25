@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tee_id: 
+  course_hole_id: 
+  latitude: 
+  longitude: 
+  created_by: 
+  created_date: 2015-05-04 13:02:25
+  updated_by: 
+  updated_date: 2015-05-04 13:02:25
+
+two:
+  tee_id: 
+  course_hole_id: 
+  latitude: 
+  longitude: 
+  created_by: 
+  created_date: 2015-05-04 13:02:25
+  updated_by: 
+  updated_date: 2015-05-04 13:02:25

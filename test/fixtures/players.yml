@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gca_user_id: 
+  handicap: 9.99
+  tee_id: 
+  created_by: 
+  created_date: 2015-05-26 23:14:26
+  updated_by: 
+  updated_date: 2015-05-26 23:14:26
+  score: false
+  putts: false
+  fairway_hits: false
+  handicap_status: false
+  status: MyString
+  nick_name: MyString
+
+two:
+  gca_user_id: 
+  handicap: 9.99
+  tee_id: 
+  created_by: 
+  created_date: 2015-05-26 23:14:26
+  updated_by: 
+  updated_date: 2015-05-26 23:14:26
+  score: false
+  putts: false
+  fairway_hits: false
+  handicap_status: false
+  status: MyString
+  nick_name: MyString

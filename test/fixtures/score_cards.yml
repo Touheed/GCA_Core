@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  round_id: 
+  course_hole_id: 
+  round_group_member_id: 
+  handicap_index: 
+  score: 
+  putts: 1
+  fairway_hits: 1
+  created_by: 
+  created_date: 2015-05-01 21:15:37
+  updated_by: 
+  updated_date: 2015-05-01 21:15:37
+
+two:
+  round_id: 
+  course_hole_id: 
+  round_group_member_id: 
+  handicap_index: 
+  score: 
+  putts: 1
+  fairway_hits: 1
+  created_by: 
+  created_date: 2015-05-01 21:15:37
+  updated_by: 
+  updated_date: 2015-05-01 21:15:37

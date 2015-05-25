@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tee:</strong>
+  <%= @course_hole_tee.tee_id %>
+</p>
+
+<p>
+  <strong>Course hole:</strong>
+  <%= @course_hole_tee.course_hole_id %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @course_hole_tee.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @course_hole_tee.longitude %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @course_hole_tee.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @course_hole_tee.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @course_hole_tee.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @course_hole_tee.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_course_hole_tee_path(@course_hole_tee) %> |
+<%= link_to 'Back', course_hole_tees_path %>

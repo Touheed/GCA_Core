@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gca_user_id: 
+  golf_club_tournament_id: 
+  authentication_token: MyString
+  created_by: 
+  created_date: 2015-05-06 16:49:29
+  updated_by: 
+  updated_date: 2015-05-06 16:49:29
+
+two:
+  gca_user_id: 
+  golf_club_tournament_id: 
+  authentication_token: MyString
+  created_by: 
+  created_date: 2015-05-06 16:49:29
+  updated_by: 
+  updated_date: 2015-05-06 16:49:29

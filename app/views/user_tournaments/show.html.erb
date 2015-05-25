@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gca user:</strong>
+  <%= @user_tournament.gca_user_id %>
+</p>
+
+<p>
+  <strong>Golf club tournament:</strong>
+  <%= @user_tournament.golf_club_tournament_id %>
+</p>
+
+<p>
+  <strong>Authentication token:</strong>
+  <%= @user_tournament.authentication_token %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @user_tournament.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @user_tournament.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @user_tournament.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @user_tournament.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_user_tournament_path(@user_tournament) %> |
+<%= link_to 'Back', user_tournaments_path %>

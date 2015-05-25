@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gca user:</strong>
+  <%= @player.gca_user_id %>
+</p>
+
+<p>
+  <strong>Handicap:</strong>
+  <%= @player.handicap %>
+</p>
+
+<p>
+  <strong>Tee:</strong>
+  <%= @player.tee_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @player.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @player.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @player.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @player.updated_date %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @player.score %>
+</p>
+
+<p>
+  <strong>Putts:</strong>
+  <%= @player.putts %>
+</p>
+
+<p>
+  <strong>Fairway hits:</strong>
+  <%= @player.fairway_hits %>
+</p>
+
+<p>
+  <strong>Handicap status:</strong>
+  <%= @player.handicap_status %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @player.status %>
+</p>
+
+<p>
+  <strong>Nick name:</strong>
+  <%= @player.nick_name %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

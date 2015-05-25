@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @gca_user.user_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @gca_user.first_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @gca_user.middle_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @gca_user.last_name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @gca_user.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @gca_user.email %>
+</p>
+
+<p>
+  <strong>Cell number:</strong>
+  <%= @gca_user.cell_number %>
+</p>
+
+<p>
+  <strong>Social media provider:</strong>
+  <%= @gca_user.social_media_provider %>
+</p>
+
+<p>
+  <strong>Social media:</strong>
+  <%= @gca_user.social_media_id %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @gca_user.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @gca_user.created_date %>
+</p>
+
+<p>
+  <strong>Updataed by:</strong>
+  <%= @gca_user.updataed_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @gca_user.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_gca_user_path(@gca_user) %> |
+<%= link_to 'Back', gca_users_path %>

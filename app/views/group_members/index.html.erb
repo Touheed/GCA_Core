@@ -1,0 +1,35 @@
+<h1>Listing group_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Group</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_members.each do |group_member| %>
+      <tr>
+        <td><%= group_member.user_id %></td>
+        <td><%= group_member.group_id %></td>
+        <td><%= group_member.created_by %></td>
+        <td><%= group_member.created_date %></td>
+        <td><%= group_member.updated_by %></td>
+        <td><%= group_member.updated_date %></td>
+        <td><%= link_to 'Show', group_member %></td>
+        <td><%= link_to 'Edit', edit_group_member_path(group_member) %></td>
+        <td><%= link_to 'Destroy', group_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group member', new_group_member_path %>

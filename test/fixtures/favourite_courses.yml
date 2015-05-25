@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  golf_course_id: 
+  user_id: 
+  created_by: 
+  created_date: 2015-05-01 20:07:12
+  updated_by: 
+  updated_date: 2015-05-01 20:07:12
+
+two:
+  golf_course_id: 
+  user_id: 
+  created_by: 
+  created_date: 2015-05-01 20:07:12
+  updated_by: 
+  updated_date: 2015-05-01 20:07:12

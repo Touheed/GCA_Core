@@ -1,0 +1,49 @@
+<h1>Listing gca_users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>First name</th>
+      <th>Middle name</th>
+      <th>Last name</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th>Cell number</th>
+      <th>Social media provider</th>
+      <th>Social media</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updataed by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gca_users.each do |gca_user| %>
+      <tr>
+        <td><%= gca_user.user_name %></td>
+        <td><%= gca_user.first_name %></td>
+        <td><%= gca_user.middle_name %></td>
+        <td><%= gca_user.last_name %></td>
+        <td><%= gca_user.password %></td>
+        <td><%= gca_user.email %></td>
+        <td><%= gca_user.cell_number %></td>
+        <td><%= gca_user.social_media_provider %></td>
+        <td><%= gca_user.social_media_id %></td>
+        <td><%= gca_user.created_by %></td>
+        <td><%= gca_user.created_date %></td>
+        <td><%= gca_user.updataed_by %></td>
+        <td><%= gca_user.updated_date %></td>
+        <td><%= link_to 'Show', gca_user %></td>
+        <td><%= link_to 'Edit', edit_gca_user_path(gca_user) %></td>
+        <td><%= link_to 'Destroy', gca_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gca user', new_gca_user_path %>

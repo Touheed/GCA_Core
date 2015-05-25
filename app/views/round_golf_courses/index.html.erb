@@ -1,0 +1,35 @@
+<h1>Listing round_golf_courses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Round</th>
+      <th>Golf course</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @round_golf_courses.each do |round_golf_course| %>
+      <tr>
+        <td><%= round_golf_course.round_id %></td>
+        <td><%= round_golf_course.golf_course_id %></td>
+        <td><%= round_golf_course.created_by %></td>
+        <td><%= round_golf_course.created_date %></td>
+        <td><%= round_golf_course.updated_by %></td>
+        <td><%= round_golf_course.updated_date %></td>
+        <td><%= link_to 'Show', round_golf_course %></td>
+        <td><%= link_to 'Edit', edit_round_golf_course_path(round_golf_course) %></td>
+        <td><%= link_to 'Destroy', round_golf_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Round golf course', new_round_golf_course_path %>

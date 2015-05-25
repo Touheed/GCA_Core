@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User tournament:</strong>
+  <%= @leaderboard.user_tournament_id %>
+</p>
+
+<p>
+  <strong>Course hole:</strong>
+  <%= @leaderboard.course_hole_id %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @leaderboard.score %>
+</p>
+
+<p>
+  <strong>Putts:</strong>
+  <%= @leaderboard.putts %>
+</p>
+
+<p>
+  <strong>Fairway hits:</strong>
+  <%= @leaderboard.fairway_hits %>
+</p>
+
+<p>
+  <strong>Handicap index:</strong>
+  <%= @leaderboard.handicap_index %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @leaderboard.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @leaderboard.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @leaderboard.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @leaderboard.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_leaderboard_path(@leaderboard) %> |
+<%= link_to 'Back', leaderboards_path %>

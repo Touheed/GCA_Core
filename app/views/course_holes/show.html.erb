@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Golf course:</strong>
+  <%= @course_hole.golf_course_id %>
+</p>
+
+<p>
+  <strong>Par:</strong>
+  <%= @course_hole.par %>
+</p>
+
+<p>
+  <strong>Stroke index:</strong>
+  <%= @course_hole.stroke_index %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @course_hole.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @course_hole.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @course_hole.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @course_hole.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_course_hole_path(@course_hole) %> |
+<%= link_to 'Back', course_holes_path %>

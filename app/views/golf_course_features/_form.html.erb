@@ -1,0 +1,73 @@
+<%= form_for(@golf_course_feature) do |f| %>
+  <% if @golf_course_feature.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@golf_course_feature.errors.count, "error") %> prohibited this golf_course_feature from being saved:</h2>
+
+      <ul>
+      <% @golf_course_feature.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hole_number %><br>
+    <%= f.number_field :hole_number %>
+  </div>
+  <div class="field">
+    <%= f.label :feature_type %><br>
+    <%= f.text_field :feature_type %>
+  </div>
+  <div class="field">
+    <%= f.label :show_marker %><br>
+    <%= f.number_field :show_marker %>
+  </div>
+  <div class="field">
+    <%= f.label :front_latitude %><br>
+    <%= f.text_field :front_latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :front_longitude %><br>
+    <%= f.text_field :front_longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :back_latitude %><br>
+    <%= f.text_field :back_latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :back_longitude %><br>
+    <%= f.text_field :back_longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.datetime_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="field">
+    <%= f.label :golf_course_id %><br>
+    <%= f.text_field :golf_course_id %>
+  </div>
+  <div class="field">
+    <%= f.label :course_hole_id %><br>
+    <%= f.text_field :course_hole_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

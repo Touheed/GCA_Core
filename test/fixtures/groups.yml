@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_name: MyString
+  group_type: MyString
+  group_owner: 
+  created_by: 
+  created_date: 2015-05-02 11:02:53
+  updated_by: 
+  updated_date: 2015-05-02 11:02:53
+
+two:
+  group_name: MyString
+  group_type: MyString
+  group_owner: 
+  created_by: 
+  created_date: 2015-05-02 11:02:53
+  updated_by: 
+  updated_date: 2015-05-02 11:02:53

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Golf club:</strong>
+  <%= @golf_club_tournament.golf_club_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @golf_club_tournament.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @golf_club_tournament.city %>
+</p>
+
+<p>
+  <strong>Locality:</strong>
+  <%= @golf_club_tournament.locality %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @golf_club_tournament.title %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @golf_club_tournament.status %>
+</p>
+
+<p>
+  <strong>Starting hole:</strong>
+  <%= @golf_club_tournament.starting_hole %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @golf_club_tournament.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @golf_club_tournament.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @golf_club_tournament.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @golf_club_tournament.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_golf_club_tournament_path(@golf_club_tournament) %> |
+<%= link_to 'Back', golf_club_tournaments_path %>

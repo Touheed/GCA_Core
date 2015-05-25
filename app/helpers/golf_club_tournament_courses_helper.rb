@@ -1,0 +1,2 @@
+module GolfClubTournamentCoursesHelper
+end

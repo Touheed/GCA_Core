@@ -1,0 +1,33 @@
+<h1>Listing states</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>State name</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @states.each do |state| %>
+      <tr>
+        <td><%= state.state_name %></td>
+        <td><%= state.created_by %></td>
+        <td><%= state.created_date %></td>
+        <td><%= state.updated_by %></td>
+        <td><%= state.updated_date %></td>
+        <td><%= link_to 'Show', state %></td>
+        <td><%= link_to 'Edit', edit_state_path(state) %></td>
+        <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New State', new_state_path %>

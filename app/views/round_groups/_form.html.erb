@@ -1,0 +1,49 @@
+<%= form_for(@round_group) do |f| %>
+  <% if @round_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@round_group.errors.count, "error") %> prohibited this round_group from being saved:</h2>
+
+      <ul>
+      <% @round_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :round_id %><br>
+    <%= f.text_field :round_id %>
+  </div>
+  <div class="field">
+    <%= f.label :group_name %><br>
+    <%= f.text_field :group_name %>
+  </div>
+  <div class="field">
+    <%= f.label :group_type %><br>
+    <%= f.text_field :group_type %>
+  </div>
+  <div class="field">
+    <%= f.label :group_owner %><br>
+    <%= f.text_field :group_owner %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.datetime_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

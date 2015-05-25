@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tee.description %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @tee.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @tee.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @tee.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @tee.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_tee_path(@tee) %> |
+<%= link_to 'Back', tees_path %>

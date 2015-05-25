@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>State name:</strong>
+  <%= @state.state_name %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @state.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @state.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @state.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @state.updated_date %>
+</p>
+
+<%= link_to 'Edit', edit_state_path(@state) %> |
+<%= link_to 'Back', states_path %>

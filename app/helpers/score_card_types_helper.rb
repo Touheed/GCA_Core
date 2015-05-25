@@ -1,0 +1,2 @@
+module ScoreCardTypesHelper
+end

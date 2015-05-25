@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hole number:</strong>
+  <%= @golf_course_feature.hole_number %>
+</p>
+
+<p>
+  <strong>Feature type:</strong>
+  <%= @golf_course_feature.feature_type %>
+</p>
+
+<p>
+  <strong>Show marker:</strong>
+  <%= @golf_course_feature.show_marker %>
+</p>
+
+<p>
+  <strong>Front latitude:</strong>
+  <%= @golf_course_feature.front_latitude %>
+</p>
+
+<p>
+  <strong>Front longitude:</strong>
+  <%= @golf_course_feature.front_longitude %>
+</p>
+
+<p>
+  <strong>Back latitude:</strong>
+  <%= @golf_course_feature.back_latitude %>
+</p>
+
+<p>
+  <strong>Back longitude:</strong>
+  <%= @golf_course_feature.back_longitude %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @golf_course_feature.description %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @golf_course_feature.created_by %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @golf_course_feature.created_date %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @golf_course_feature.updated_by %>
+</p>
+
+<p>
+  <strong>Updated date:</strong>
+  <%= @golf_course_feature.updated_date %>
+</p>
+
+<p>
+  <strong>Golf course:</strong>
+  <%= @golf_course_feature.golf_course_id %>
+</p>
+
+<p>
+  <strong>Course hole:</strong>
+  <%= @golf_course_feature.course_hole_id %>
+</p>
+
+<%= link_to 'Edit', edit_golf_course_feature_path(@golf_course_feature) %> |
+<%= link_to 'Back', golf_course_features_path %>

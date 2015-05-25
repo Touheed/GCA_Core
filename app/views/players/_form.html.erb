@@ -1,0 +1,69 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gca_user_id %><br>
+    <%= f.text_field :gca_user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :handicap %><br>
+    <%= f.text_field :handicap %>
+  </div>
+  <div class="field">
+    <%= f.label :tee_id %><br>
+    <%= f.text_field :tee_id %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_date %><br>
+    <%= f.datetime_select :created_date %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_date %><br>
+    <%= f.datetime_select :updated_date %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br>
+    <%= f.check_box :score %>
+  </div>
+  <div class="field">
+    <%= f.label :putts %><br>
+    <%= f.check_box :putts %>
+  </div>
+  <div class="field">
+    <%= f.label :fairway_hits %><br>
+    <%= f.check_box :fairway_hits %>
+  </div>
+  <div class="field">
+    <%= f.label :handicap_status %><br>
+    <%= f.check_box :handicap_status %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :nick_name %><br>
+    <%= f.text_field :nick_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+<h1>Listing golf_club_tournament_courses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Golf course</th>
+      <th>Golf club tournament</th>
+      <th>Created by</th>
+      <th>Created date</th>
+      <th>Updated by</th>
+      <th>Updated date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @golf_club_tournament_courses.each do |golf_club_tournament_course| %>
+      <tr>
+        <td><%= golf_club_tournament_course.golf_course_id %></td>
+        <td><%= golf_club_tournament_course.golf_club_tournament_id %></td>
+        <td><%= golf_club_tournament_course.created_by %></td>
+        <td><%= golf_club_tournament_course.created_date %></td>
+        <td><%= golf_club_tournament_course.updated_by %></td>
+        <td><%= golf_club_tournament_course.updated_date %></td>
+        <td><%= link_to 'Show', golf_club_tournament_course %></td>
+        <td><%= link_to 'Edit', edit_golf_club_tournament_course_path(golf_club_tournament_course) %></td>
+        <td><%= link_to 'Destroy', golf_club_tournament_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Golf club tournament course', new_golf_club_tournament_course_path %>
