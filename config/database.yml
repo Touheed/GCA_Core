@@ -20,7 +20,7 @@
 
 development:
   adapter: postgresql
-  database: GCA_Core
+  database: GCA_Core_Git
   host: localhost
   username: postgres
   password: consrv@123
